@@ -6,7 +6,7 @@ Welcome to my project portfolio! Here you'll find some of the projects I've work
 
 ## 1. **E-commerce Data Analysis**
 **Description:** Exploratory Data Analysis (EDA) on e-commerce dataset, including data cleaning, visualization, and reporting insights.  
-**Technologies:** Python, Pandas, Matplotlib, Seaborn
+**Technologies:** Python, Pandas, Matplotlib, Seaborn  
 **Repository:** [GitHub Link](https://github.com/dylanhrojas/ecommerce-eda)
 
 ---
