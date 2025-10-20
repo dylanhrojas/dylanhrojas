@@ -1,16 +1,43 @@
-## Hi there 👋
+# 👋 Hi, I'm Dylan Hernandez
 
-<!--
-**dylanhrojas/dylanhrojas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to my GitHub profile!  
+I'm a **Computer Systems Engineering Student** passionate about building intelligent systems, crafting clean code, and turning data into impactful insights.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 About Me
+
+- 🎓 Background in **Computational Systems Engineering**  
+- 💻 Focused on **Machine Learning**, and **BackEnd Development**  
+
+---
+
+## 🧩 Tech Stack
+
+**Languages:** Python, Java, SQL  
+**Frameworks:** Spring Boot, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+**Tools:** Git, VS Code, JupyterLab  
+**Databases:** PostgreSQL, SQL Server 
+
+---
+
+## 💼 Portfolio
+
+Here are a few of my featured projects:
+
+| Project | Description | Tech |
+|----------|--------------|------|
+| 🎯 **E-Commerce EDA** | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib |
+
+👉 [See all projects →](./PROJECTS.md)
+
+---
+
+## 📫 Connect with Me
+
+- 🌐 [LinkedIn](https://www.linkedin.com/in/dylan-hern%C3%A1ndez-rojas-312785201/)  
+- ✉️ [Email](mailto:dy_hr@outlook.com)
+
+---
+
+⭐ *Thanks for visiting! Feel free to explore my repositories and projects.*
