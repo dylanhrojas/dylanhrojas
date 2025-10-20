@@ -27,7 +27,7 @@ Here are a few of my featured projects:
 
 | Project | Description | Tech |
 |----------|--------------|------|
-| 🎯 **E-Commerce EDA** | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib |
+| 🎯 **E-Commerce EDA** | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib, Seaborn |
 
 👉 [See all projects →](./PROJECTS.md)
 
