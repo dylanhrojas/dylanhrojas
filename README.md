@@ -33,15 +33,6 @@ Here are a few of my featured projects:
 
 ---
 
-## 🔬 Research
-
-I'm currently working on a **research project** involving **EMG (Electromyography) sensors**, focused on applying **Machine Learning** and **Deep Learning** techniques for **gesture classification**.  
-This project aims to contribute to **human–computer interaction (HCI)** and **assistive technologies** by enabling intelligent interpretation of muscle signal patterns.
-
-🧠 *Status:* In progress
-
----
-
 ## 📫 Connect with Me
 
 - 🌐 [LinkedIn](https://www.linkedin.com/in/dylan-hern%C3%A1ndez-rojas-312785201/)  
