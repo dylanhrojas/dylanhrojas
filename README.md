@@ -8,7 +8,7 @@ I'm a **Computer Systems Engineering Student** passionate about building intelli
 ## 🚀 About Me
 
 - 🎓 Background in **Computational Systems Engineering**  
-- 💻 Focused on **Machine Learning** and **BackEnd Development**  
+- 💻 Focused on **Machine Learning** and **Artificial Intelligence** and **Data Science**  
 
 ---
 
