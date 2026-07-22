@@ -14,9 +14,9 @@ I'm a **Computer Systems Engineering Student** passionate about building intelli
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, SQL, Java  
-**Libraries/Frameworks:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Spring Boot  
-**Tools:** Git, VS Code, JupyterLab  
+**Languages:** Python, SQL, Java
+**Libraries/Frameworks:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Spring Boot  
+**Tools:** Git, VS Code, Jupyter  
 **Databases:** PostgreSQL, SQL Server
 
 ---
@@ -28,6 +28,7 @@ Here are a few of my featured projects:
 | Project | Description | Tech |
 |----------|--------------|------|
 | 🎯 [**E-Commerce EDA**](https://github.com/dylanhrojas/ecommerce-eda) | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib, Seaborn |
+| 🧬 [**Lipid Classification: Mouse vs NMR**](https://github.com/dylanhrojas/mouse-nmr) | Molecular lipid classification with feature engineering and ML models achieving F1-score ≈ 1.0 | Python, NumPy, Pandas, Scikit-learn, XGBoost, UMAP |
 
 👉 [See all projects →](./PROJECTS.md)
 
