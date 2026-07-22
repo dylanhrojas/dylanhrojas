@@ -36,7 +36,7 @@ Here are a few of my featured projects:
 
 ## 📫 Connect with Me
 
-- 🌐 [LinkedIn](https://www.linkedin.com/in/dylan-hern%C3%A1ndez-rojas-312785201/)  
+- 🌐 [LinkedIn](www.linkedin.com/in/dylan-hernandez-rojas)  
 
 ---
 
