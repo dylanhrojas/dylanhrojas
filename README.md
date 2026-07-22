@@ -27,8 +27,8 @@ Here are a few of my featured projects:
 
 | Project | Description | Tech |
 |----------|--------------|------|
-| 🎯 [**E-Commerce EDA**](https://github.com/dylanhrojas/ecommerce-eda) | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib, Seaborn |
 | 🧬 [**Lipid Classification: Mouse vs NMR**](https://github.com/dylanhrojas/mouse-nmr) | Molecular lipid classification with feature engineering and ML models achieving F1-score ≈ 1.0 | Python, NumPy, Pandas, Scikit-learn, XGBoost, UMAP |
+| 🎯 [**E-Commerce EDA**](https://github.com/dylanhrojas/ecommerce-eda) | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib, Seaborn |
 
 👉 [See all projects →](./PROJECTS.md)
 
