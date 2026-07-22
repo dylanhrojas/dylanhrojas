@@ -14,7 +14,7 @@ I'm a **Computer Systems Engineering Student** passionate about building intelli
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, SQL, Java
+**Languages:** Python, SQL, Java  
 **Libraries/Frameworks:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Spring Boot  
 **Tools:** Git, VS Code, Jupyter  
 **Databases:** PostgreSQL, SQL Server
