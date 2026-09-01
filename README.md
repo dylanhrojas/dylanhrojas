@@ -1,14 +1,17 @@
 # 👋 Hi, I'm Dylan Hernandez
-
-Welcome to my GitHub profile!  
-I'm a **Computer Systems Engineering Student** passionate about building intelligent systems, crafting clean code, and turning data into impactful insights.
+ML Engineer | Python | FastAPI | Currently in ML Practicum at CIMAT.
+Data science background — from exploratory analysis and feature engineering to deployed, containerized ML APIs.
+**Actively seeking**: Remote ML/Data roles (entry-level) | Available: December 2026
 
 ---
 
-## 🚀 About Me
-
-- 🎓 Background in **Computational Systems Engineering**  
-- 💻 Focused on **Machine Learning** and **Artificial Intelligence** and **Data Science**  
+## 🎯 About Me
+- 📍 **Location**: Nuevo León, Mexico (Open to Remote)
+- 🎓 **Education**: Computer Systems Engineering + ML/Data Science specialization
+- 💼 **Current**: ML Engineering Practicum at CIMAT (Data Science)
+- 🔍 **Focus**: Data analysis, feature engineering, API design, ML deployment
+- 🌍 **Languages**: Spanish (Native) | English (Fluent)
+- 📅 **Available**: December 2026 onwards
 
 ---
 
@@ -36,7 +39,7 @@ Here are a few of my featured projects:
 
 ## 📫 Connect with Me
 
-- 🌐 [LinkedIn](www.linkedin.com/in/dylan-hernandez-rojas)  
+- 🌐 [LinkedIn](https://www.linkedin.com/in/dylan-hernandez-rojas) 
 
 ---
 
