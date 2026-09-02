@@ -8,7 +8,7 @@ Data science background — from exploratory analysis and feature engineering to
 ## 🎯 About Me
 - 📍 **Location**: Nuevo León, Mexico (Open to Remote)
 - 🎓 **Education**: Computer Systems Engineering + ML/Data Science specialization
-- 💼 **Current**: Data Science Practicum at CIMAT
+- 💼 **Current**: Data Science Practicum at Centro de Investigación en Matemáticas (CIMAT)
 - 🔍 **Focus**: Data science, feature engineering, API design, ML deployment
 - 🌍 **Languages**: Spanish (Native) | English (Fluent)
 - 📅 **Available**: December 2026 onwards
