@@ -5,8 +5,8 @@ Welcome to my project portfolio! Here you'll find some of the projects I've work
 ---
 
 ## 1. **Employee Attrition Predictor**
-**Description:** End-to-end binary classifier that estimates the probability that an employee leaves a company, using the IBM HR Analytics dataset (1,470 employees). Includes model comparison with cross-validation and hyperparameter tuning, a reusable preprocessing pipeline, and deployment through a FastAPI endpoint and a Streamlit form, containerized with Docker Compose.
-**Technologies:** Python, Pandas, Scikit-learn, XGBoost, Statsmodels, FastAPI, Streamlit, Pydantic, Docker, Jupyter Notebooks
+**Description:** End-to-end binary classifier that estimates the probability that an employee leaves a company, using the IBM HR Analytics dataset (synthetic, 1,470 employees). Includes model comparison with cross-validation and hyperparameter tuning, a reusable preprocessing pipeline, and deployment through a FastAPI endpoint and a Streamlit form, containerized with Docker Compose. Covered with pytest tests and a GitHub Actions CI that trains the model and builds the Docker images.
+**Technologies:** Python, Pandas, Scikit-learn, XGBoost, Statsmodels, FastAPI, Streamlit, Pydantic, Docker, pytest, GitHub Actions, Jupyter Notebooks
 **Repository:** [GitHub Link](https://github.com/dylanhrojas/employee-attrition-predictor)
 
 **Key Results:** Logistic Regression selected over XGBoost and Random Forest (which overfit heavily) | Test set: recall 0.66, F2 0.57, ROC AUC 0.81 | Interpretable coefficients (overtime, business travel and time since last promotion increase risk)
