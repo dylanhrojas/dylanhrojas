@@ -17,9 +17,9 @@ Data science background — from exploratory analysis and feature engineering to
 
 ## 🧩 Tech Stack
 
-**Languages:** Python, SQL, Java
-**Libraries/Frameworks:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, FastAPI, Streamlit, Pydantic, Spring Boot
-**Tools:** Git, Docker, pytest, GitHub Actions, VS Code, Jupyter
+**Languages:** Python, SQL, Java  
+**Libraries/Frameworks:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, FastAPI, Streamlit, Pydantic, Spring Boot  
+**Tools:** Git, Docker, pytest, GitHub Actions, VS Code, Jupyter  
 **Databases:** PostgreSQL, SQL Server
 
 ---
