@@ -30,7 +30,7 @@ Here are a few of my featured projects:
 
 | Project | Description | Tech |
 |----------|--------------|------|
-| 🚪 [**Employee Attrition Predictor**](https://github.com/dylanhrojas/employee-attrition-predictor) | End-to-end attrition classifier (Logistic Regression, recall 0.66, ROC AUC 0.81) served through a FastAPI endpoint and a Streamlit form, containerized with Docker Compose | Python, Scikit-learn, XGBoost, FastAPI, Streamlit, Docker |
+| 🚪 [**Employee Attrition Predictor**](https://github.com/dylanhrojas/employee-attrition-predictor) | End-to-end attrition classifier (Logistic Regression, recall 0.66, ROC AUC 0.81) served through a FastAPI endpoint and a Streamlit form, containerized with Docker Compose, tested with pytest and CI | Python, Scikit-learn, XGBoost, FastAPI, Streamlit, Docker, pytest, GitHub Actions |
 | 🧬 **Lipid Classification: Mouse vs NMR** (Private) | Molecular lipid classification with feature engineering and ML models achieving F1-score ≈ 1.0 | Python, NumPy, Pandas, Scikit-learn, XGBoost, UMAP |
 | 🎯 [**E-Commerce EDA**](https://github.com/dylanhrojas/ecommerce-eda) | Data exploration and visualization for online sales trends | Python, Pandas, Matplotlib, Seaborn |
 
