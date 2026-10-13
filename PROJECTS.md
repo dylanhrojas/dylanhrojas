@@ -16,7 +16,7 @@ Welcome to my project portfolio! Here you'll find some of the projects I've work
 **Technologies:** Python, NumPy, Pandas, Scikit-learn, XGBoost, t-SNE, UMAP, Jupyter Notebooks
 **Repository:** Private
 
-**Key Results:** Classification models with F1-score ≈ 1.0 | Embeddings with Silhouette scores (CHOL: 0.598, DPSM: 0.678) | Identification of key discriminant features using XGBoost
+**Key Results:** Classification models with F1-score ≈ 1.0, also with scale-invariant features only | Embeddings (UMAP) with Silhouette scores of 0.751 (CHOL) and 0.810 (DPSM) | NMR cholesterol subpopulations identified (k=3, Adjusted Rand Index 0.93) | Identification of key discriminant features using XGBoost
 
 ## 3. **E-commerce Data Analysis**
 **Description:** Exploratory Data Analysis (EDA) on e-commerce dataset, including data cleaning, visualization, and reporting insights.
