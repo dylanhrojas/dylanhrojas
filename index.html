@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dylan Hernandez Rojas | Portafolio de Ciencia de Datos y ML</title>
+<meta name="description" content="Portafolio de Dylan Hernandez Rojas, estudiante de Ingeniería en Sistemas Computacionales e interno de ciencia de datos en CIMAT. Modelos de ML desplegados con FastAPI y Docker, análisis de datos y feature engineering.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dylan Hernandez Rojas | Portafolio de Ciencia de Datos y ML">
+<meta property="og:description" content="Del análisis exploratorio y la ingeniería de variables a APIs de ML contenerizadas y probadas con CI.">
+<meta property="og:locale" content="es_MX">
+<meta property="og:image" content="https://github.com/dylanhrojas/employee-attrition-predictor/raw/main/examples/01_ui.png">
+<!-- COMPLETAR: og:url con la URL final de GitHub Pages -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7;--text:#231f1a;--muted:#6b6256;--rule:#cdc3ae;--accent:#8a2f1d;
+  --code-bg:#ece5d4;--serif:'Newsreader',Georgia,'Times New Roman',serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1b1814;--text:#e9e1d2;--muted:#a79d8b;--rule:#3b352c;--accent:#e0906f;--code-bg:#262219}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.125rem/1.7 var(--serif);counter-reset:sec fig;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+h1,h2,h3,h4{font-weight:600;line-height:1.25;margin:0 0 .6em}
+h2{font-size:1.6rem;counter-increment:sec;counter-reset:sub;border-bottom:1px solid var(--rule);padding-bottom:6px;margin-bottom:1.1em}
+h2::before{content:counter(sec) ".\00a0\00a0"}
+h3{font-size:1.1rem}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:8px;top:8px;background:var(--bg);padding:8px 12px;z-index:100;border:1px solid var(--rule)}
+code{font:400 .84em var(--mono);background:var(--code-bg);padding:1px 5px}
+
+header{position:fixed;inset:0 0 auto 0;background:var(--bg);border-bottom:1px solid var(--rule);z-index:50}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:48px;gap:12px;max-width:900px}
+.brand{font-style:italic;text-decoration:none;color:var(--text)}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{display:block;padding:6px 9px;text-decoration:none;color:var(--muted);font-size:.82rem;font-variant:small-caps;letter-spacing:.08em;white-space:nowrap}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+@media (max-width:640px){.brand{display:none}}
+
+.hero{padding-top:112px;padding-bottom:40px;text-align:center}
+.eyebrow{font:400 .78rem var(--mono);color:var(--muted);margin:0 0 20px;letter-spacing:.04em}
+.hero h1{font-size:clamp(2rem,6vw,2.9rem);font-weight:500;margin-bottom:.3em}
+.hero .role{color:var(--muted);font-style:italic;margin:0 0 4px}
+.hero .affil{font-size:.95rem;color:var(--muted);margin:0}
+.abstract{text-align:left;margin:32px auto 0;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:1.02rem}
+.abstract b{font-variant:small-caps;letter-spacing:.08em;margin-right:.4em}
+.abstract p{margin:0}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 24px;margin-top:20px;font-size:.95rem}
+.btn{color:var(--accent)}
+
+.about-grid{display:grid;gap:8px}
+.facts{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--rule);font-size:.98rem}
+.facts li{padding:8px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:7.5rem 1fr;gap:12px}
+.facts strong{font:500 .74rem var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding-top:.35em}
+
+.project{counter-increment:sub;counter-reset:blk;padding:8px 0 28px;margin-bottom:28px;border-bottom:1px solid var(--rule)}
+.project:last-child{border-bottom:0}
+.project h3.title{font-size:1.3rem;margin-bottom:.2em}
+.project h3.title::before{content:counter(sec) "." counter(sub) "\00a0\00a0"}
+.role-line{color:var(--muted);margin:0 0 8px;font-size:1rem}
+.block{margin-top:20px}
+.block>h4{font-size:1rem;font-style:italic;font-weight:600;margin:0 0 6px;counter-increment:blk}
+.block>h4::before{content:counter(sec) "." counter(sub) "." counter(blk) "\00a0\00a0";font-style:normal;color:var(--muted);font-weight:400}
+.tags{display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;font:400 .88rem var(--mono)}
+.tags li+li::before{content:"·";margin:0 .6em;color:var(--muted)}
+.shots{display:grid;gap:16px;margin:14px 0}
+@media (min-width:640px){.shots.two{grid-template-columns:1fr 1fr}}
+figure{margin:18px 0;counter-increment:fig}
+figure img{width:100%;max-height:340px;object-fit:contain;background:#fff;border:1px solid var(--rule);display:block}
+figcaption{font-size:.9rem;color:var(--muted);margin-top:6px}
+figcaption::before{content:"Figura " counter(fig) ". ";font-weight:600;color:var(--text)}
+figure svg.diagram{margin:0;background:var(--code-bg);border:1px solid var(--rule);padding:8px}
+pre{background:var(--code-bg);border:1px solid var(--rule);padding:12px 14px;overflow-x:auto;font:400 .82rem/1.55 var(--mono);margin:14px 0}
+pre code{background:none;padding:0}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:12px;font-size:1rem}
+ul.res{margin:0;padding-left:1.2em}
+ul.res li{margin:6px 0}
+.note{font-size:.92rem;color:var(--muted);margin:8px 0}
+svg.diagram{width:100%;height:auto;display:block}
+svg.diagram rect{fill:var(--bg);stroke:var(--text);stroke-width:1}
+svg.diagram text{fill:var(--text);font:400 13px 'Newsreader',Georgia,serif}
+svg.diagram path{stroke:var(--text);stroke-width:1;fill:none}
+svg.diagram polygon{fill:var(--text)}
+
+.skills{border-top:1px solid var(--rule)}
+.skill-group{display:grid;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--rule)}
+@media (min-width:640px){.skill-group{grid-template-columns:11rem 1fr}}
+.skill-group h3{margin:0;font-size:1rem;font-style:italic}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+footer{border-top:1px solid var(--rule);padding:24px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#inicio">Dylan Hernandez</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="inicio" class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Portafolio profesional · Disponible desde diciembre de 2026 · Remoto</p>
+    <h1>Dylan Hernandez Rojas</h1>
+    <p class="role">Aspirante a ML Engineer · Ciencia de datos con Python y FastAPI</p>
+    <p class="affil">Universidad de Montemorelos · Centro de Investigación en Matemáticas (CIMAT)</p>
+    <div class="abstract"><p><b>Resumen.</b> Llevo un modelo de aprendizaje automático desde el análisis exploratorio hasta una API contenerizada, probada y con integración continua. Busco un primer puesto remoto en ML o datos donde el resultado sea software que funcione, no solo un notebook.</p></div>
+    <div class="btns">
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+      <a class="btn" href="https://github.com/dylanhrojas" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="#contacto">Contacto</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi">
+  <div class="wrap">
+    <h2>Sobre mí</h2>
+    <div class="about-grid">
+      <div>
+        <p>Estoy por egresar (dic. 2026) de Ingeniería en Sistemas Computacionales en la Universidad de Montemorelos y soy interno de investigación en ciencia de datos en el Centro de Investigación en Matemáticas (CIMAT).</p>
+        <p>Mi enfoque abarca ciencia de datos, ingeniería de variables, diseño de APIs y despliegue de modelos. Mis proyectos cubren el ciclo completo: exploración, comparación de modelos con validación cruzada, empaquetado en servicios y pruebas automatizadas.</p>
+        <h3>Experiencia</h3>
+        <ul class="res">
+          <li><strong>Data Science Research Intern, CIMAT</strong> (mayo 2026 – actualidad, remoto): análisis de características discriminantes en lípidos (ver proyecto 2) y diseño e impartición de 2 talleres de Git, GitHub y documentación de código para cómputo científico, con 7 asistentes cada uno, dirigidos a estudiantes de posgrado.</li>
+          <li><strong>Software Engineer Intern, Departamento de TI, Universidad de Montemorelos</strong> (ago 2024 – nov 2025): más de 20 APIs RESTful con Spring Boot y Spring Security en la plataforma educativa EduAdvent (100+ instituciones); backend de un sistema de tickets con PostgreSQL y dashboards (50+ reportes mensuales); esquema PostgreSQL, ingesta desde una API externa y cron jobs para dashboards en Looker Studio de un sistema de gestión de proyectos (30+ proyectos).</li>
+          <li><strong>Reconocimientos:</strong> 1er lugar en ExpoFitec 2025 (análisis y visualización de datos de microplásticos marinos, NOAA) y 1er lugar en Hackathon Fitec 2025 (buscador semántico con NLP y similitud coseno, expuesto como API). Promedio 9.90/10.</li>
+        </ul>
+      </div>
+      <ul class="facts">
+        <li><strong>Ubicación</strong>Nuevo León, México (abierto a remoto)</li>
+        <li><strong>Formación</strong>Ing. en Sistemas Computacionales, Universidad de Montemorelos</li>
+        <li><strong>Idiomas</strong>Español (nativo) · Inglés B2+ (Cambridge, 2025)</li>
+        <li><strong>Busco</strong>Roles junior de ML / datos, remoto</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <h2>Proyectos</h2>
+
+    <!-- ============ PROYECTO 1 ============ -->
+    <article class="project" aria-labelledby="p1">
+      <h3 class="title" id="p1">Employee Attrition Predictor</h3>
+      <p class="role-line"><strong>Rol:</strong> proyecto individual, desarrollo de punta a punta (modelado, API, interfaz, contenedores, pruebas y CI).</p>
+
+      <div class="block">
+        <h4>Contexto y problema</h4>
+        <p>Estimar la probabilidad de que un empleado deje la empresa para que un área de RR. HH. pueda priorizar acciones de retención. Se usó el dataset sintético IBM HR Analytics (1,470 empleados, 35 columnas), así que el valor del proyecto está en el proceso de modelado y despliegue, no en un caso de negocio real.</p>
+      </div>
+
+      <div class="block">
+        <h4>Herramientas y tecnologías</h4>
+        <ul class="tags">
+          <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>XGBoost</li><li>Statsmodels</li><li>FastAPI</li><li>Streamlit</li><li>Pydantic</li><li>Docker Compose</li><li>pytest</li><li>GitHub Actions</li><li>Jupyter</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h4>Evidencia visual / técnica</h4>
+        <div class="shots two">
+          <figure>
+            <img loading="lazy" src="https://github.com/dylanhrojas/employee-attrition-predictor/raw/main/examples/01_ui.png" alt="Formulario de Streamlit para capturar los datos de un empleado">
+            <figcaption>Formulario de Streamlit para capturar los datos del empleado.</figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="https://github.com/dylanhrojas/employee-attrition-predictor/raw/main/examples/02_ui.png" alt="Pantalla de Streamlit con la probabilidad de renuncia calculada por el modelo">
+            <figcaption>Probabilidad de renuncia devuelta por la API.</figcaption>
+          </figure>
+        </div>
+        <figure>
+          <img loading="lazy" src="https://github.com/dylanhrojas/employee-attrition-predictor/raw/main/examples/docker_compose_up.gif" alt="Animación de la terminal ejecutando docker compose up para levantar la API y la interfaz">
+          <figcaption>Demostración de <code>docker compose up</code>: API y UI en contenedores.</figcaption>
+        </figure>
+
+        <figure>
+          <svg class="diagram" viewBox="0 0 720 90" role="img" aria-label="Diagrama de arquitectura: Streamlit envía POST a /predict de FastAPI, que valida con Pydantic y usa un pipeline de preprocesamiento más regresión logística">
+          <rect x="4" y="25" width="150" height="40" rx="6"/><text x="79" y="49" text-anchor="middle">Streamlit (UI)</text>
+          <rect x="204" y="25" width="150" height="40" rx="6"/><text x="279" y="49" text-anchor="middle">FastAPI + Pydantic</text>
+          <rect x="404" y="25" width="170" height="40" rx="6"/><text x="489" y="49" text-anchor="middle">Pipeline + Reg. Logística</text>
+          <path d="M154 45H196"/><polygon points="204,45 194,40 194,50"/>
+          <path d="M354 45H396"/><polygon points="404,45 394,40 394,50"/>
+          <text x="179" y="18" text-anchor="middle" font-size="11">POST /predict</text>
+          <text x="379" y="18" text-anchor="middle" font-size="11">predict_proba</text>
+        </svg>
+          <figcaption>Arquitectura: la UI nunca carga el modelo directamente, siempre pasa por la API (según el README del repositorio).</figcaption>
+        </figure>
+
+        <pre><code>docker compose up --build
+# Streamlit  → http://localhost:8501
+# API (docs) → http://localhost:8000/docs</code></pre>
+
+        <div class="links">
+          <a href="https://github.com/dylanhrojas/employee-attrition-predictor" target="_blank" rel="noopener">Repositorio (54 commits, licencia MIT) ↗</a>
+          <a href="https://github.com/dylanhrojas/employee-attrition-predictor/actions/workflows/ci.yml" target="_blank" rel="noopener">Workflow de CI ↗</a>
+        </div>
+        <p class="note">No hay despliegue público; la demo se ejecuta localmente con Docker.</p>
+      </div>
+
+      <div class="block">
+        <h4>Resultados e impacto</h4>
+        <ul class="res">
+          <li>Se compararon regresión logística, XGBoost y Random Forest con validación cruzada estratificada de 5 pliegues y búsqueda de hiperparámetros. XGBoost y Random Forest sobreajustaron (F2 de entrenamiento 0.95 y 0.73 frente a 0.49 y 0.53 en validación), por lo que se eligió la regresión logística.</li>
+          <li>En el conjunto de prueba (294 empleados, 47 con renuncia): <strong>recall 0.66</strong>, <strong>F2 0.57</strong>, <strong>ROC AUC 0.81</strong>. Se priorizó el recall porque pasar por alto a quien se va cuesta más que una falsa alarma.</li>
+          <li>Coeficientes interpretables: las horas extra, los viajes frecuentes y los años desde el último ascenso aumentan el riesgo.</li>
+          <li>Pruebas con pytest y un CI en GitHub Actions que entrena el modelo, corre las pruebas y construye las imágenes Docker.</li>
+          <li>Limitaciones documentadas: datos sintéticos, solo 47 casos positivos en prueba (métricas ruidosas), umbral fijo de 0.5 (precisión ≈ 0.36) y sin análisis de equidad. No es apto para decisiones sobre personas.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ============ PROYECTO 2 ============ -->
+    <article class="project" aria-labelledby="p2">
+      <h3 class="title" id="p2">Análisis de características discriminantes en lípidos: ratón vs. rata topo desnuda (NMR)</h3>
+      <p class="role-line"><strong>Rol:</strong> proyecto individual dentro de mi internado en CIMAT: ingeniería de características, modelado, embeddings y clustering.</p>
+
+      <div class="block">
+        <h4>Contexto y problema</h4>
+        <p>Identificar qué características moleculares distinguen el colesterol y la esfingomielina entre membranas de ratón y de rata topo desnuda (NMR), a partir de mapas g₃ de dinámica molecular.</p>
+        <p class="note">Créditos: los datos de simulación provienen del proyecto de tesis de <a href="https://www.linkedin.com/in/naikary-mart%C3%ADnez/" target="_blank" rel="noopener">Naikary Paloma Martínez Velázquez</a> (CIMAT Monterrey). Agradezco la asesoría del <a href="https://www.linkedin.com/in/adreyesf/" target="_blank" rel="noopener">Dr. Ángel David Reyes Figueroa</a>.</p>
+      </div>
+
+      <div class="block">
+        <h4>Herramientas y tecnologías</h4>
+        <ul class="tags">
+          <li>Python</li><li>NumPy</li><li>Pandas</li><li>Scikit-learn</li><li>XGBoost</li><li>t-SNE</li><li>UMAP</li><li>Jupyter</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h4>Evidencia visual / técnica</h4>
+        <p class="note">El repositorio es privado, por lo que no se publica código ni figuras. Los resultados se resumen abajo.</p>
+      </div>
+
+      <div class="block">
+        <h4>Resultados e impacto</h4>
+        <ul class="res">
+          <li>Clasificación con <strong>F1 ≈ 1.0</strong>, confirmada también con características invariantes a la escala para descartar artefactos de escala.</li>
+          <li>Embeddings t-SNE/UMAP con silueta de <strong>0.751</strong> (CHOL) y <strong>0.810</strong> (DPSM) en UMAP.</li>
+          <li>Subpoblaciones de colesterol en NMR (k = 3, Adjusted Rand Index <strong>0.93</strong>).</li>
+          <li>Identificación de las características discriminantes clave con XGBoost.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ============ PROYECTO 3 ============ -->
+    <article class="project" aria-labelledby="p3">
+      <h3 class="title" id="p3">E-Commerce EDA: tendencias de ventas y segmentación RFM</h3>
+      <p class="role-line"><strong>Rol:</strong> proyecto individual, limpieza de datos, análisis exploratorio y visualización.</p>
+
+      <div class="block">
+        <h4>Contexto y problema</h4>
+        <p>Entender la estructura, los patrones y las anomalías del dataset Online Retail (Kaggle, 541,909 filas y 8 columnas, transacciones de diciembre de 2010 a diciembre de 2011 de un minorista en línea del Reino Unido) para extraer tendencias de ventas, productos y clientes.</p>
+      </div>
+
+      <div class="block">
+        <h4>Herramientas y tecnologías</h4>
+        <ul class="tags">
+          <li>Python 3.11</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Jupyter</li><li>Conda</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h4>Evidencia visual / técnica</h4>
+        <figure>
+          <img loading="lazy" src="https://github.com/dylanhrojas/ecommerce-eda/raw/main/results/total_revenue.png" alt="Gráfica de ingresos totales del minorista a lo largo del tiempo">
+          <figcaption>Ingresos totales en el periodo analizado.</figcaption>
+        </figure>
+        <div class="shots two">
+          <figure>
+            <img loading="lazy" src="https://github.com/dylanhrojas/ecommerce-eda/raw/main/results/rfm.png" alt="Segmentación RFM de los clientes del minorista">
+            <figcaption>Segmentación RFM de clientes.</figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="https://github.com/dylanhrojas/ecommerce-eda/raw/main/results/average_sales.png" alt="Ventas promedio por día de la semana y por día del mes, con el mínimo el martes">
+            <figcaption>Ventas promedio por día de la semana y del mes.</figcaption>
+          </figure>
+        </div>
+        <p class="note">Dos notebooks en orden: <code>01_data_prep_cleaning</code> (nulos, duplicados, tipos) y <code>02_eda</code> (distribuciones, estadísticos, segmentación RFM).</p>
+        <div class="links">
+          <a href="https://github.com/dylanhrojas/ecommerce-eda" target="_blank" rel="noopener">Repositorio (55 commits, licencia MIT) ↗</a>
+        </div>
+      </div>
+
+      <div class="block">
+        <h4>Resultados e impacto</h4>
+        <ul class="res">
+          <li>Ingresos en aumento, con un salto marcado en octubre de 2011; septiembre a diciembre es el periodo más fuerte.</li>
+          <li>Reino Unido lidera en ventas, seguido de Países Bajos, Irlanda y Alemania.</li>
+          <li>Segmentación RFM: la mayoría de los clientes cae en «En riesgo», «Nuevos» y «Leales potenciales». El ingreso por cliente está fuertemente sesgado a la derecha.</li>
+          <li>Horario pico de 12:00 a 15:00; canastas típicas de 1 a 12 artículos; tasa de cancelación baja (máximo 2.0 %).</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="habilidades">
+  <div class="wrap">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill-group"><h3>Lenguajes</h3>
+        <ul class="tags"><li>Python</li><li>SQL</li><li>Java</li></ul></div>
+      <div class="skill-group"><h3>Ciencia de datos y ML</h3>
+        <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>XGBoost</li><li>Statsmodels</li><li>UMAP / t-SNE</li><li>Matplotlib</li><li>Seaborn</li></ul></div>
+      <div class="skill-group"><h3>APIs y aplicaciones</h3>
+        <ul class="tags"><li>FastAPI</li><li>Pydantic</li><li>Streamlit</li><li>Spring Boot</li><li>Spring Security</li><li>APIs RESTful</li></ul></div>
+      <div class="skill-group"><h3>Bases de datos</h3>
+        <ul class="tags"><li>PostgreSQL</li><li>SQL Server</li></ul></div>
+      <div class="skill-group"><h3>Herramientas y DevOps</h3>
+        <ul class="tags"><li>Git</li><li>Docker / Compose</li><li>GitHub Actions</li><li>pytest</li><li>Jupyter</li><li>VS Code</li><li>Looker Studio</li></ul></div>
+      <div class="skill-group"><h3>Habilidades transversales</h3>
+        <ul class="res">
+          <li>Evaluación honesta de modelos: documento limitaciones y sobreajuste.</li>
+          <li>Enseñanza técnica: 2 talleres de Git y documentación para posgrado en CIMAT.</li><li>Comunicación técnica en español e inglés (B2+).</li>
+        </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <p>Disponible desde diciembre de 2026 para roles remotos de nivel inicial en ML o datos.</p>
+    <ul class="contact-list">
+      <li><strong>Correo:</strong> <a href="mailto:dy_hr@outlook.com">dy_hr@outlook.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dylan-hernandez-rojas" target="_blank" rel="noopener">linkedin.com/in/dylan-hernandez-rojas</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/dylanhrojas" target="_blank" rel="noopener">github.com/dylanhrojas</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Dylan Hernandez Rojas</span>
+    <a href="https://github.com/dylanhrojas" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
